@@ -9,7 +9,7 @@ function h($str) {
 
 session_start(); // 1
 
-$name = (string)filter_input(INPUT_POST, 'name'); 
+$name = (string)filter_input(INPUT_POST, 'name');
 $text = (string)filter_input(INPUT_POST, 'text');
 $token = (string)filter_input(INPUT_POST, 'token'); // 3
 
@@ -30,6 +30,7 @@ fclose($fp);
 <!DOCTYPE html>
 
 <meta charset="UTF-8">
+<link rel="stylesheet" href="keiziban.css">
 <title>Nちゃねえる</title>
 <h7>N</h7><h11>ちゃんねる</h11>
 <h1>[概要]</h1>
@@ -37,7 +38,7 @@ fclose($fp);
 <div class="haikei1"><p1>とりあえず、好きなこと書き込んでください。でも、この掲示板への迷惑行為。</p1><br><p1>エロチャはなしで。(するなら別の場所に移しておなしゃす。)</p1>
 </div>
 
-<link rel="stylesheet" href="keiziban.css">
+
 
 <section>
     <h1>新規投稿</h1><h3>(ニックネームと本文を記入してください)</h3>
